@@ -17,7 +17,10 @@ else
     echo $URL > url.txt
 fi
 
-git add .
+git add anitrack.db
+git add url.txt
+
+
 git commit -m 'save'
 git remote add origin $URL
 git push origin main --force
